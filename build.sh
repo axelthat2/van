@@ -2,6 +2,8 @@
 
 yarn build
 
+yarn global add @sentry/cli
+
 release="--auth-token ${SENTRY_AUTH_TOKEN} releases --org cashforcarsio --project javascript"
 
 sentry-cli $release files vance-dance delete --all
