@@ -7,6 +7,8 @@ Sentry.init({
   dsn: "https://c39265164cb34e148a5d73a138271d94@o1098027.ingest.sentry.io/6250696",
   integrations: [new BrowserTracing()],
 
+  release: "vance-dance",
+
   // Set tracesSampleRate to 1.0 to capture 100%
   // of transactions for performance monitoring.
   // We recommend adjusting this value in production
