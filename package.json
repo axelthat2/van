@@ -9,5 +9,9 @@
   },
   "devDependencies": {
     "vite": "^2.8.0"
+  },
+  "dependencies": {
+    "@sentry/browser": "^6.18.2",
+    "@sentry/tracing": "^6.18.2"
   }
 }
