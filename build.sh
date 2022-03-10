@@ -15,3 +15,6 @@ sentry-cli $release finalize vance-dance
 for path in ./dist/assets/*.js; do
   sed -i '$ d' "$path"
 done
+
+rm -rf ./dist/assets/*.map
+
