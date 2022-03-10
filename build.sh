@@ -10,7 +10,7 @@ sentry-cli $release files vance-dance delete --all
 
 sentry-cli $release new vance-dance --finalize
 
-sentry-cli $release files vance-dance upload-sourcemaps ./dist/assets/*.map ./dist/assets/*.js
+sentry-cli $release files vance-dance upload-sourcemaps ./dist/assets/*.map ./dist/assets/*.js --url-prefix "~/assets"
 
 for path in ./dist/assets/*.js; do
   sed -i '$ d' "$path"
