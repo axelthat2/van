@@ -10,11 +10,11 @@ sentry-cli $release files vance-dance delete --all
 
 sentry-cli $release new vance-dance --finalize
 
-sentry-cli $release files vance-dance upload-sourcemaps ./dist/assets/*.map
+sentry-cli $release files vance-dance upload-sourcemaps ./dist/assets/*.map ./dist/assets/*.js
 
-# for path in ./dist/assets/*.js; do
-#   sed -i '$ d' "$path"
-# done
+for path in ./dist/assets/*.js; do
+  sed -i '$ d' "$path"
+done
 
-# rm -rf ./dist/assets/*.map
+rm -rf ./dist/assets/*.map
 
