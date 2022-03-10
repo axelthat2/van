@@ -8,6 +8,8 @@ release="--auth-token ${SENTRY_AUTH_TOKEN} releases --org cashforcarsio --projec
 
 sentry-cli $release files vance-dance delete --all
 
+sentry-cli $release new vance-dance
+
 sentry-cli $release files vance-dance upload-sourcemaps ./dist/assets
 
 sentry-cli $release finalize vance-dance
