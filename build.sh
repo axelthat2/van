@@ -16,5 +16,5 @@ sentry-cli $release files vance-dance upload-sourcemaps ./dist/assets/*.map
 #   sed -i '$ d' "$path"
 # done
 
-rm -rf ./dist/assets/*.map
+# rm -rf ./dist/assets/*.map
 
